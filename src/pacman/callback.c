@@ -838,7 +838,7 @@ void cb_dl_progress(const char *filename, off_t file_xfered, off_t file_total)
 
 	printf(" %ls%-*s ", wcfname, padwid, "");
 	/* We will show 1.62M/s, 11.6M/s, but 116K/s and 1116K/s */
-    /* TODO: use decimal separator from locale instead of forcing the period, which is 
+	/* TODO: use decimal separator from locale instead of forcing the period, which is 
      * normally not used in non-english-speaking countries */
 	if(rate_human < 9.995) {
 		printf("%6.1f %3s  %4.2f % 3s/s ",
